@@ -1,0 +1,14 @@
+﻿<Window x:Class="VetAmbulance.DesktopApp.AdminMain"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VetAmbulance.DesktopApp"
+        mc:Ignorable="d"
+        Title="AdminMain" Height="400" Width="292">
+    <Grid>
+        <Button x:Name="Vets" Content="Vets" HorizontalAlignment="Center" Margin="0,37,0,0" VerticalAlignment="Top" Width="76" Height="33" Click="Vets_Click"/>
+        <Button x:Name="Ambulances" Content="Ambulances" HorizontalAlignment="Center" Margin="0,91,0,0" VerticalAlignment="Top" Width="76" Height="37" Click="Ambulances_Click"/>
+        <Button Width="76" Height="37" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,143,0,143" Content="Sign off" Click="ButtonLogout_OnClick" />
+    </Grid>
+</Window>

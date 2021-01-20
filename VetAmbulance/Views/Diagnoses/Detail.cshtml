@@ -1,0 +1,40 @@
+﻿@model VetAmbulance.BL.Models.Diagnosis
+
+@{
+    ViewData["Title"] = "Diagnosis Detail";
+}
+
+<h1>Detail diagnózy</h1>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            Date
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+        <dt class="col-sm-2">
+            Disease
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.DisName)
+        </dd>
+        <dt class="col-sm-2">
+            Symptoms
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Symptoms)
+        </dd>
+        <dt class="col-sm-2">
+            Therapy
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Therapy)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Index">Go Back</a>
+</div>

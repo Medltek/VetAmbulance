@@ -1,0 +1,46 @@
+﻿@model IEnumerable<VetAmbulance.BL.Models.Reservation>
+
+@{
+    ViewData["Title"] = "Reservation";
+}
+
+<h1>Reservation List</h1>
+
+<p>
+    <a asp-action="Create">Create Reservation</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Ambulance
+            </th>
+            <th>
+                Vet
+            </th>
+            <th>
+                Date
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Vet.Ambulance.Address)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Vet.Name) @Html.DisplayFor(modelItem => item.Vet.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Date)
+                </td>
+                <td>
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

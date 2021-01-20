@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="0...N">
+    <Position X="7.055" Y="8.114" Height="0.291" Width="0.7" />
+  </Comment>
+  <Comment CommentText="0...N">
+    <Position X="4.492" Y="4.807" Height="0.291" Width="0.7" />
+  </Comment>
+  <Comment CommentText="0...N">
+    <Position X="7.03" Y="5.232" Height="0.291" Width="0.7" />
+  </Comment>
+  <Comment CommentText="0...N">
+    <Position X="11.769" Y="5.468" Height="0.291" Width="0.7" />
+  </Comment>
+  <Comment CommentText="0...N">
+    <Position X="8.652" Y="5.514" Height="0.291" Width="0.7" />
+  </Comment>
+  <Comment CommentText="1...1">
+    <Position X="10.272" Y="7.877" Height="0.291" Width="0.7" />
+  </Comment>
+  <Comment CommentText="1...1">
+    <Position X="11.805" Y="4.702" Height="0.291" Width="0.7" />
+  </Comment>
+  <Comment CommentText="1...1">
+    <Position X="6.048" Y="8.156" Height="0.291" Width="0.7" />
+  </Comment>
+  <Comment CommentText="1...1">
+    <Position X="5.348" Y="5.722" Height="0.291" Width="0.7" />
+  </Comment>
+  <Comment CommentText="1...1">
+    <Position X="3.468" Y="5.941" Height="0.291" Width="0.7" />
+  </Comment>
+  <Class Name="VetAmbulance.BL.Models.Ambulance">
+    <Position X="10.75" Y="0.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAEEAAAAAAAAAAACQAAAAAAEBAAACAgAAAAAAAoA=</HashCode>
+      <FileName>Models\Ambulance.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VetAmbulance.BL.Models.Diagnosis">
+    <Position X="7.75" Y="6.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAgCAEBAAQEAAAAAAABAAAAgAAEAAAADAgAAAAAACIA=</HashCode>
+      <FileName>Models\Diagnosis.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Patient1" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="VetAmbulance.BL.Models.Patient">
+    <Position X="4.25" Y="6" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>EACCAEAAABAAAAAAAAAAABAAAAEABAAAAAAAACAAQIA=</HashCode>
+      <FileName>Models\Patient.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VetAmbulance.BL.Models.Reservation">
+    <Position X="7.75" Y="1.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAEAEBQEEIAAAAAAAAAAAAAEAAAABAAAAQAAACIA=</HashCode>
+      <FileName>Models\Reservation.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Patient1" />
+      <Property Name="Vet1" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="VetAmbulance.BL.Models.Vet">
+    <Position X="11" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>FACCCEAAAAAAAAAAAAAAAAQAAEEAAAACAgAAAAAAAIg=</HashCode>
+      <FileName>Models\Vet.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Ambulance1" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="VetAmbulance.BL.Models.Drug">
+    <Position X="4.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAEAAAQEAAAAAAAAAAAQAAAEAAEACAgAAAAAACIA=</HashCode>
+      <FileName>Models\Drug.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Patient1" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VetAmbulance", "VetAmbulance\VetAmbulance.csproj", "{82EDFCA9-4396-4C2A-8AD2-3FFB38BB031E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{36294F13-934A-408F-9B14-0DD09A94F224} = {36294F13-934A-408F-9B14-0DD09A94F224}
+		{763C8E2F-5C41-43DB-AACA-D4EFBF540A99} = {763C8E2F-5C41-43DB-AACA-D4EFBF540A99}
+		{763ABDF4-3D30-436A-BDCA-3A6B55713B21} = {763ABDF4-3D30-436A-BDCA-3A6B55713B21}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VetAmbulance.BL", "Vet.BL\VetAmbulance.BL.csproj", "{36294F13-934A-408F-9B14-0DD09A94F224}"
+	ProjectSection(ProjectDependencies) = postProject
+		{763ABDF4-3D30-436A-BDCA-3A6B55713B21} = {763ABDF4-3D30-436A-BDCA-3A6B55713B21}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VetAmbulance.DAL", "Vet.DAL\VetAmbulance.DAL.csproj", "{763ABDF4-3D30-436A-BDCA-3A6B55713B21}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VetAmbulance.DesktopApp", "Vet.DesktopApp\VetAmbulance.DesktopApp.csproj", "{763C8E2F-5C41-43DB-AACA-D4EFBF540A99}"
+	ProjectSection(ProjectDependencies) = postProject
+		{36294F13-934A-408F-9B14-0DD09A94F224} = {36294F13-934A-408F-9B14-0DD09A94F224}
+		{763ABDF4-3D30-436A-BDCA-3A6B55713B21} = {763ABDF4-3D30-436A-BDCA-3A6B55713B21}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{82EDFCA9-4396-4C2A-8AD2-3FFB38BB031E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82EDFCA9-4396-4C2A-8AD2-3FFB38BB031E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82EDFCA9-4396-4C2A-8AD2-3FFB38BB031E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82EDFCA9-4396-4C2A-8AD2-3FFB38BB031E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36294F13-934A-408F-9B14-0DD09A94F224}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36294F13-934A-408F-9B14-0DD09A94F224}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36294F13-934A-408F-9B14-0DD09A94F224}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36294F13-934A-408F-9B14-0DD09A94F224}.Release|Any CPU.Build.0 = Release|Any CPU
+		{763ABDF4-3D30-436A-BDCA-3A6B55713B21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{763ABDF4-3D30-436A-BDCA-3A6B55713B21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{763ABDF4-3D30-436A-BDCA-3A6B55713B21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{763ABDF4-3D30-436A-BDCA-3A6B55713B21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{763C8E2F-5C41-43DB-AACA-D4EFBF540A99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{763C8E2F-5C41-43DB-AACA-D4EFBF540A99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{763C8E2F-5C41-43DB-AACA-D4EFBF540A99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{763C8E2F-5C41-43DB-AACA-D4EFBF540A99}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {63FE9BD1-FFC4-440F-A9ED-83991A3F41A9}
+	EndGlobalSection
+EndGlobal

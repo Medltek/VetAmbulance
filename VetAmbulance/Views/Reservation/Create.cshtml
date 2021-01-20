@@ -1,0 +1,56 @@
+﻿
+@using VetAmbulance.BL.Models
+@model VetAmbulance.BL.ReservationDTO
+
+@{
+    ViewData["Title"] = "Create Reservation";
+}
+
+<h1>Create Reservation</h1>
+
+<hr />
+@if (ViewBag.Error != null)
+{
+    <div class="row">
+        <div class="col-md-4">
+            <div class="alert alert-danger" role="alert">
+                @ViewBag.Error
+            </div>
+        </div>
+    </div>
+}
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label class="control-label">Doktor</label>
+                <select asp-for="VetId">
+                    @foreach (Vet vet in ViewBag.Vets)
+                    {
+                        <option value="@vet.Id">@vet.Name</option>
+                    }
+                </select>
+                <span asp-validation-for="VetId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Date</label>
+                <input asp-for="Date" type="date" class="form-control" />
+                <span asp-validation-for="Date" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Hour</label>
+                <input asp-for="Hour" type="number" class="form-control" />
+                <span asp-validation-for="Hour" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Go Back</a>
+</div>
+

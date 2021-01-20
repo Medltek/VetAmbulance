@@ -1,0 +1,21 @@
+﻿<Window x:Class="VetAmbulance.DesktopApp.Vets"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VetAmbulance.DesktopApp"
+        mc:Ignorable="d"
+        Title="Vets" Height="500" Width="554.276">
+    <Grid>
+        <DataGrid x:Name="dataGridVets" HorizontalAlignment="Left" Height="381" Margin="0,39,0,0" VerticalAlignment="Top" Width="548" AutoGenerateColumns="False" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Name" Binding="{Binding Name}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Ambulance" Binding="{Binding Ambulance.Address}" Width="*"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="ButtonCreateVet" Content="Create new Vet" HorizontalAlignment="Left" Margin="9,10,0,0" VerticalAlignment="Top" Width="123" Height="24" Click="ButtonCreateVet_OnClick"/>
+        <Button x:Name="ButtonDeleteVet" Content="Delete Vet" HorizontalAlignment="Left" Margin="137,10,0,0" VerticalAlignment="Top" Width="123" Height="24" Click="ButtonDeleteVet_OnClick"/>
+        <Button x:Name="ButtonEditVet" Content="Edit Vet" HorizontalAlignment="Left" Margin="274,10,0,0" VerticalAlignment="Top" Width="123" Height="24" Click="ButtonEditVet_OnClick"/>
+        <Button x:Name="ButtonBack" Content="GoBack" HorizontalAlignment="Left" Margin="421,10,0,0" VerticalAlignment="Top" Width="123" Height="24" Click="ButtonBack_Click"/>
+    </Grid>
+</Window>

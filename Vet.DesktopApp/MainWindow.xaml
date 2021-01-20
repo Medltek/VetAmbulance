@@ -1,0 +1,34 @@
+﻿<Window x:Class="VetAmbulance.DesktopApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VetAmbulance.DesktopApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="341.707" Width="375.164">
+    <Grid Margin="10,10,3.4,-2.6">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="713*"/>
+            <ColumnDefinition Width="71*"/>
+        </Grid.ColumnDefinitions>
+        <Button Content="Login" HorizontalAlignment="Left" Margin="131,187,0,0" VerticalAlignment="Top" Width="130" Height="46" Click="Button_Click"/>
+        <TextBox x:Name="textBoxName" HorizontalAlignment="Left" Height="26" Margin="131,84,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="130"/>
+        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="131,131,0,0" VerticalAlignment="Top" Width="130" Height="26"/>
+        <Label Content="Name:" HorizontalAlignment="Left" Margin="62,84,0,0" VerticalAlignment="Top" Width="69"/>
+        <Label Content="Password:" HorizontalAlignment="Left" Margin="62,131,0,0" VerticalAlignment="Top" Width="64" RenderTransformOrigin="-0.224,0.781"/>
+        <GroupBox Header="Login as:" Margin="20,171,191.2,-63.4">
+            <Grid Margin="0,10,0,5.4">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="25*"/>
+                    <RowDefinition Height="11*"/>
+                    <RowDefinition Height="21*"/>
+                    <RowDefinition Height="169*"/>
+                </Grid.RowDefinitions>
+                <RadioButton x:Name="radioButtonVet" Content="Vet" HorizontalAlignment="Left" Margin="2,5,0,0" VerticalAlignment="Top" />
+                <RadioButton x:Name="radioButtonAdmin" Content="Admin" HorizontalAlignment="Left" Margin="2,24,0,0" VerticalAlignment="Top" Grid.RowSpan="3"/>
+            </Grid>
+        </GroupBox>
+        <Label Content="Login" HorizontalAlignment="Left" Margin="62,23,0,0" VerticalAlignment="Top" Width="199" FontSize="20"/>
+
+    </Grid>
+</Window>
